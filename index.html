@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js" defer></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejador de Viagem Climático</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Planejador Climático de Viagem </h1>
+        <div class="input-section">
+            <div class="input-fields-grid">
+                <div class="input-group">
+                    <label for="location-input">Local</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="location-input" placeholder="Ex: Salvador, BA ou apenas Bahia">
+                        <span class="clear-btn hide">&times;</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="start-date-input">Início da Viagem</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="start-date-input" placeholder="DD/MM/AAAA" maxlength="10">
+                        <span class="clear-btn hide">&times;</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="end-date-input">Fim da Viagem</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="end-date-input" placeholder="DD/MM/AAAA" maxlength="10">
+                        <span class="clear-btn hide">&times;</span>
+                    </div>
+                </div>
+            </div>
+            <button id="search-button">Ver Previsão</button>
+        </div>
+
+        <p id="loading-message" class="hide">Buscando previsão...</p>
+
+        <div id="results-container">
+        </div>
+    </div>
+</body>
+
+</html>
